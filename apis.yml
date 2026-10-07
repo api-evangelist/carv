@@ -1,30 +1,70 @@
 aid: carv
+
 name: CARV
+
+image: https://cdn.prod.website-files.com/65ccf250b7102b398ec21b32/67bd92d1da529b92af76ac2b_opengraph-image-small.png
+
 description: 'Carv provides an agentic AI platform for volume hiring, automating recruiting tasks such as candidate screening, scheduling, onboarding, and compliance. By deploying AI-driven agents, enterprises can reduce time-to-hire by up to 60%, cut admin costs, and scale hiring without adding headcount. The platform integrates with ATS and HR systems, offering a customizable library of agents for various recruitment workflows.'
+
 url: https://raw.githubusercontent.com/api-evangelist/carv/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-07 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-07'
+
 modified: '2026-10-07'
+
 tags:
 - Hiring
 - AI Recruiting
 - Volume Hiring
 - Staffing
-apis: []
+- Automation
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/carv-conformance.yml
+- type: SecurityTxt
+  url: well-known/carv-help-security.txt
+- type: WellKnown
+  url: well-known/carv-well-known.yml
+- type: Hosts
+  url: hosts/carv-hosts.yml
+- type: Vendors
+  url: vendors/carv-vendors.yml
+- type: TermsOfService
+  url: https://www.carv.com/terms-and-conditions
+- type: Support
+  url: https://help.carv.com/en/
+- type: PrivacyPolicy
+  url: https://www.carv.com/privacy-policy
+- type: Newsroom
+  url: https://www.carv.com/press
+- type: Blog
+  url: https://www.carv.com/blog
+- type: GettingStarted
+  url: https://www.carv.com/blog/agentic-ai-setup-for-retail-hiring
+- type: Documentation
+  url: https://help.carv.com/
 - type: DomainSecurity
   url: security/carv-domain-security.yml
 - type: Website
   url: https://www.carv.com
+
+apis: []
 
 x-coverage:
   state: unreadable
@@ -33,4 +73,10 @@ x-coverage:
   evidence:
     - url: https://app.carv.com/openapi.json
       status: 200
-  checked: 2026-10-07
+  checked: '2026-10-07'
+x-enrichment:
+  date: '2026-10-07'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
