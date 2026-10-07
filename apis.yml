@@ -1,7 +1,6 @@
 aid: carv
 name: CARV
-description: 'CARV is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Carv provides an agentic AI platform for volume hiring, automating recruiting tasks such as candidate screening, scheduling, onboarding, and compliance. By deploying AI-driven agents, enterprises can reduce time-to-hire by up to 60%, cut admin costs, and scale hiring without adding headcount. The platform integrates with ATS and HR systems, offering a customizable library of agents for various recruitment workflows.'
 url: https://raw.githubusercontent.com/api-evangelist/carv/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -11,7 +10,10 @@ specificationVersion: '0.20'
 created: '2026-10-07'
 modified: '2026-10-07'
 tags:
-- Company
+- Hiring
+- AI Recruiting
+- Volume Hiring
+- Staffing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +21,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/carv-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.carv.com
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: The developer portal at https://app.carv.com returns a JavaScript-rendered shell with no machine‑readable OpenAPI spec.
+  evidence:
+    - url: https://app.carv.com/openapi.json
+      status: 200
+  checked: 2026-10-07

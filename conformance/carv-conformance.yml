@@ -1,0 +1,18 @@
+generated: '2026-10-07'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.carv.com/privacy-policy
+sources:
+- https://www.carv.com/privacy-policy
+- https://www.carv.com/agents/compliance-agent
+standards:
+- id: gdpr
+  conforms: true
+  evidence: GDPR by defaul Consent captured in the conversation, retention set by you, data held in the EU.
+- id: iso-27001
+  conforms: true
+  evidence: ISO 27001 & SOC 2 Encrypted in transit and at rest.
+- id: soc2
+  conforms: true
+  evidence: ISO 27001 & SOC 2 Encrypted in transit and at rest.
+docs: https://www.carv.com/privacy-policy
